@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <EditText
+            android:id="@+id/ET_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите имя" />
+
+        <EditText
+            android:id="@+id/ET_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите телефон" />
+
+        <EditText
+            android:id="@+id/ET_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите email" />
+
+        <EditText
+            android:id="@+id/ET_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите адрес" />
+
+        <Button
+            android:id="@+id/buttonShow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Показать БД" />
+
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Добавить запись" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonDel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Удалить запись" />
+
+            <EditText
+                android:id="@+id/ET_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введите ID (для удаления)" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/buttonClear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Очистить БД" />
+
+        <ScrollView
+            android:id="@+id/scrollView4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:textSize="20sp" />
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

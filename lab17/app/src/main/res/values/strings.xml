@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">lab17</string>
+    <string name="server">https://working-personally-gnu.ngrok-free.app</string>
+</resources>
